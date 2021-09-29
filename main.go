@@ -32,7 +32,7 @@ func main() {
 	router.GET("/follower/:username", FindByUsername)
 	router.GET("/user/:userId/detail", FindByUserId)
 
-	log.Fatal(http.ListenAndServe(":3000", router))
+	log.Fatal(http.ListenAndServe(":"+os.Getenv("PORT"), router))
 }
 
 func ConsumeApi() UserID {

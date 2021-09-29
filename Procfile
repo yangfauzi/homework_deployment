@@ -1,1 +1,1 @@
-web: bin/homework_deployment
+web: ./bin/homework_deployment
